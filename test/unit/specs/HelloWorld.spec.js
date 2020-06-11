@@ -1,11 +1,11 @@
 import Vue from 'vue'
-import HelloWorld from '@/components/HelloWorld'
+import CatSelector from '@/components/CatSelector'
 
-describe('HelloWorld.vue', () => {
+describe('CatSelector.vue', () => {
   it('should render correct contents', () => {
-    const Constructor = Vue.extend(HelloWorld)
+    const Constructor = Vue.extend(CatSelector)
     const vm = new Constructor().$mount()
     expect(vm.$el.querySelector('.hello h1').textContent)
-      .toEqual('Welcome to Your Vue.js App')
+      .toEqual('Web Tech Stack Selector')
   })
 })
